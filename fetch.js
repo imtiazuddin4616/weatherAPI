@@ -1,35 +1,11 @@
-// let p =fetch("https://goweather.herokuapp.com/weather/Ny")
-// p.then((value1) =>{
-//   return value1.json()
-// })
-// .then((value2)=>{
-//   console.log(value2)
-// })
-
-
-// fetch("https://goweather.herokuapp.com/weather/Ny")
-// .then((value)=>{
-//   return value.json()
-// })
-// .then((value)=>{
-//   console.log(value);
-// })
-
-// fetch("https://goweather.herokuapp.com/weather/Ny")
-// .then ((Res)=>{
-//   return Res.json()
-// })
-// .then((res)=>{
-//   console.log(res);
-// })
-
-fetch("https://api.nationalize.io/?name=nathaniel")
+fetch("https://jsonplaceholder.typicode.com/todos/1")
 .then((value)=>{
   return value.json()
 })
 .then ((value)=>{
-  document.getElementById("we").innerHTML=value.name;
-  document.getElementById("me").innerHTML=value.count;
 
+  document.getElementById("me").innerHTML=value.id;
+  document.getElementById("im").innerHTML=value.title;
+  document.getElementById("we").innerHTML=value.userId;
   console.log(value);
 })
