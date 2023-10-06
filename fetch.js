@@ -7,3 +7,13 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
   document.getElementById("user").innerHTML=value.userId;
   console.log(value);
 })
+
+
+
+
+
+
+
+
+
+
