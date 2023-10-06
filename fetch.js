@@ -7,10 +7,29 @@
 // })
 
 
-fetch("https://goweather.herokuapp.com/weather/Ny")
+// fetch("https://goweather.herokuapp.com/weather/Ny")
+// .then((value)=>{
+//   return value.json()
+// })
+// .then((value)=>{
+//   console.log(value);
+// })
+
+// fetch("https://goweather.herokuapp.com/weather/Ny")
+// .then ((Res)=>{
+//   return Res.json()
+// })
+// .then((res)=>{
+//   console.log(res);
+// })
+
+fetch("https://api.nationalize.io/?name=nathaniel")
 .then((value)=>{
   return value.json()
 })
-.then((value)=>{
+.then ((value)=>{
+  document.getElementById("we").innerHTML=value.name;
+  document.getElementById("me").innerHTML=value.count;
+
   console.log(value);
 })
